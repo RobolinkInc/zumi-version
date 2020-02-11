@@ -1,0 +1,22 @@
+v1.6 
+front-end
+Carousel styling, interaction (clicking + pressing arrow keys), and transition fixes
+Alpha of Blockly enabled
+Cleaning up and removing old code
+Added an explanation overlay and link to "Old lessons" in Learn page 
+Hard-coded release notes (for now) in settings window
+Introductory overlay for dashboard screens with check for "don't show this again"
+Fix shutdown button behavior to no hover
+Update phrasing for "on network, not online"
+Pre-loading images to load faster
+Increased sizing of Offline Mode link
+Remove "ü" in tab name
+Settings modal placement positioning fixed from being too low
+Fixed shut down modal spacing
+
+back-end
+Updating and deleting project files in Code Mode
+Change Camera Capture color to not blue anymore 
+Cleaning up and refactoring library codes
+Check all workflow and simplify flow if possible, without breaking current features
+Change "Updating Firmware" to "Updating dashboard"
