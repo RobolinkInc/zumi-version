@@ -1,22 +1,164 @@
-v1.6 
+v1.6 (Mon Feb 17) (Polish cycle)
 front-end
-Carousel styling, interaction (clicking + pressing arrow keys), and transition fixes
+"Learn" page changed to grid layout
 Alpha of Blockly enabled
 Cleaning up and removing old code
-Added an explanation overlay and link to "Old lessons" in Learn page 
 Hard-coded release notes (for now) in settings window
-Introductory overlay for dashboard screens with check for "don't show this again"
 Fix shutdown button behavior to no hover
 Update phrasing for "on network, not online"
-Pre-loading images to load faster
 Increased sizing of Offline Mode link
 Remove "ü" in tab name
 Settings modal placement positioning fixed from being too low
 Fixed shut down modal spacing
-
+Multiple language on login, Code Mode, Drive Mode
+Connection recovery overlay shows the 4-digit Zumi number
+ 
 back-end
-Updating and deleting project files in Code Mode
-Change Camera Capture color to not blue anymore 
+Deleting project files in Code Mode
 Cleaning up and refactoring library codes
+BUGFIX: OLED screen is able to display unicode WiFi names
 Check all workflow and simplify flow if possible, without breaking current features
 Change "Updating Firmware" to "Updating dashboard"
+ 
+----------
+ 
+v1.52 (Thu Feb 6)
+Fix Jupyter project list in Code Mode
+Blockly folders are included
+ 
+----------
+ 
+v1.51 (Tue Feb 4)
+Changed version number to fix update triggering issue
+ 
+----------
+ 
+v1.5 (Tue Jan 28)
+front-end
+Able to handle multiple user accounts with sign-in UI
+Alpha of Code Mode enabled
+Drive Mode runs in color mode by default
+ 
+back-end
+Drive Mode no longer saves images and improved streaming speed
+Drive Mode speed reduced to avoid motor from dying
+Multiple user file management working
+BUGFIX: If content update fails, dashboard gets stuck on an infinite spinner
+Code Mode file management working
+Capable of running a staging environment for developers
+Proper screen behavior after running an update
+BUGFIX: Last Network state behavior fixed
+Closing a Jupyter Notebook tab kills the Notebook process
+Run Jupyter only when you get to dashboard, doesn't start with startup
+Open Zumi eyes when 'last network' feature is triggered and takes you to dashboard
+BUGFIX: Had issues getting onto open networks because of wpa-supplicant file setting
+"Go to zumidashboard.ai..." shows up at the proper moment
+Make a copy of "User1" as a backup, just in case user deletes “User1”
+ 
+---------------------
+ 
+v1.42 (Fri Jan 3, 2020?)
+front-end
+BUGFIX: Drive Mode stream was not showing up
+ 
+---------------------
+ 
+v1.41 (Tue Dec 31, 2019)
+back-end
+BUGFIX: Updater problem where content wasn't updating
+ 
+---------------------
+ 
+v1.4 (Mon Dec 30, 2019)
+front-end
+Battery icon placement and break point adjusted, doesn't disappear so early
+Enabled basic "Drive Mode"
+Improved updater front-end behavior
+ 
+back-end
+Added the web diagnostics tool to content
+Able to update to a specific version, not just latest
+Unicode for special characters in WiFi name fixed (”  \  ’  ')
+Fail sound when update fails, and screen stays longer
+"Failed to connect" makes a sad sound
+When login fails, "Try Again" button should trigger Zumi screen to go back to "Go to zumidashboard.ai"
+ 
+---------------------
+v1.33 (Wed Dec 11)
+BUGFIX: Jupyter notebooks weren't working after running an update. Required a restart to work again.
+ 
+v1.32 (Tue Dec 10)
+Improvement: Fixed order of updater script. Make an exception to prevent server from being down because of firmware updater
+ 
+v1.31 (Mon Dec 9)
+Update to Jupyter 6.0.2 and new Jupyter-core 4.6.2.
+HOTBUGFIX: Fixed issue where dashboard shows up blank
+ 
+v1.30 (Fri Dec 6)
+front-end
+Fixed double wifi icon bug on first login
+Behavioral and wording fixes for "got on network, but not online" situation. (z-layer for bubble | drop shadow black | logic/timing of bubble | tooltip location)
+Korean language enabled
+ 
+back-end
+Fix updater opposite triggering problem
+Fix local network infinite loop when router is connected but has no internet
+Generate new lessonList.json file after updating content
+OLED screen shows 'Updated to v1.3'
+Zumi 1.0 integrated
+Fixed a restart issue so that www.zumidashboard.ai is also captured
+ 
+---------------------
+ 
+*v1.27 (Thu Nov 14)*
+BUGFIX: Fixed a restart issue so that www.zumidashboard.ai is also captured
+ 
+v1.26 (Wed Nov 13)
+HOTBUGFIX: Path issue fixed
+Make "zumidashboard.ai" and "www.zumidashboard.ai" both direct to dashboard
+ 
+Changing to new version number system from here on out, where digits are as follows: [major update].[release][bug fix]
+ 
+---------------------
+ 
+v1.25 (Fri Nov 8)
+front-end
+Added a layout for the Learn Mode screen
+Battery icon reads battery percentage or whether charging
+Settings modal window enabled
+Spinning icon in login, and default to "select a WiFi network" in textbox
+Add Zumiboard version number in settings menu
+Disable Kickstarter welcome message
+Entire block is clickable into a Jupyter Notebook
+ 
+back-end
+"Last network" feature (Pablo) (tester: Kristen, Hansol, Leila, Arnold, Jungwon)
+ Grabbing battery percentage
+ Getting data on settings modal window
+ "More ideal" updater w/o multiple users
+Adjusted bootup with "Wake up..." and blinks, because more stable bootup
+Update Zumi library to 0.9
+1.4 of curriculum
+Fixed library driving directions
+wpa_supplicant ghost process isn't running anymore
+We added dependency for psutil
+---------------------
+ 
+v1.24 (Fri Oct 18)
+ 
+front-end
+Zumi dashboard now has greyed-out teasers in the menu of features to come
+On the WiFi login screen, you can now show and hide your password
+In the dashboard navigation bar, in the version number dropdown, you can still run a forced "Update content"
+The Zumi dashboard is now responsive to various screen sizes
+When you lose your connection with Zumi, the dashboard will now have an overlay that notifies you and attempts to recover the connection
+The "Explore" button is currently disabled until it's more polished
+back-end
+OS settings can now be updated. It currently does not perform a reboot.
+Additional log files are created for troubleshooting internet connection
+add dependency for matplotlib & pyzbar
+Clicking “Offline mode” disconnects from WiFi if you're previously connected to WiFi
+Zumi doesn't get trapped in "attempt to connect" situation. The dashboard should always timeout somehow.
+The dashboard navigation bar is dynamically showing the version number
+If you connect to a WiFi network and we are able to get on the network, but don't seem to be online, we allow access to the dashboard anyway. We just warn you that we aren't able to get online just yet.
+"Waking up..." with eyes, but no blinking animation
