@@ -1,3 +1,72 @@
+v1.74
+front end
+    Fix URL to connect to Korean dashboard so that it can access Jupyter folder
+
+----------
+
+v1.73
+front end
+    Quickfix of overlay timing issue
+
+back end
+    Add script for moving log directories to "content history" directory
+    Add temporary dependency for 'smbus2'
+
+----------
+
+v1.71(Mon Mar 16)
+front end
+    Clean up unused events and double triggers
+    Clear up dashboard update behavior, so it doesn't confuse user
+    Visual diagram of what's happening with bridge mode, Add a visual for AP > Zumi > Internet when connecting to WiFi network
+    Positioning and placement of "Jupyter Home" button
+    Introductory overlay for dashboard screens with check for "don't show this again"
+    Added an explanation overlay and link to "Old lessons" in Learn page
+    Enabled renaming projects in Code Mode
+    Shrank down nav bar, and fixed layering issues
+    Positioning so "I'm connected!" icon location matches previous screen
+    Message for when PiCam isn't connected properly in stream box
+    Use smaller images so images load faster
+    "Zumi Documentation" on Settings modal should go to "docs.robolink.com/zumi-library"
+    Stop button should display something in place of stream
+    Change all "Close" buttons to "Back"
+    Change Drive Mode, Code Mode background color
+    Change Jupyter Home to My Folder
+
+back end
+    Communicate a disconnected PiCam to front-end
+    "Please sign in" on the OLED when landing on login screen (including cases when switching networks)
+    "I can update!" with notification sound on the OLED when update triggers
+    Changing screen to say "I'm updating" and "I'm updated!"
+    Korean content updater
+    Add country_code=US to hostapd setup
+
+Zumi.py (library version 1.2)
+    MPU speeding up init method
+    Commented out gyro offset file, redundancy
+    Fixing vNone error in Zumi library
+    Speed up init method
+    Added smooth forward and reverse
+    Added smooth turns
+    Added move inches
+    Added predicted speed variable and slope intercept variable
+    Added move coordinates
+    Added reset coordinate
+    Added code to fix coordinates turning too many times
+    Added drive path that takes coordinates
+    Added tilt orientation to angle list
+    Fixed check arduino is master put while loop inside if statement
+    Added message for disable_arduino_preboot for failed state
+    Added error checking for divide by zero in get_tilt()
+    Added error checking for div by zero in update_angles() ;math.atan(x_acc/dist_y_z)
+    Modified pre_boot_to_postboot() added a sleep in loop
+    PID Parameters in forward(), reverse()
+    PID Parameters in go_straight() and go_reverse()
+    Added mpu temperature into mpu_list
+    19. Added a get_all_sensor_data() which produces 34 items if the board has a compass
+
+----------
+
 v1.6 (Mon Feb 17)
 front-end
     "Learn" page changed to grid layout
