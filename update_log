@@ -1,3 +1,26 @@
+v1.8 (Tue Apr 21)
+Front end
+    Front-end refactoring
+    BUG: Change tab name from "Blockly: Demo Code" to "Blockly for Zumi"
+    Improved mobile layout of Code Mode
+
+Back end
+    Keep Jupyter server running if the same user logs in again
+    IMPROVEMENT: WiFi list refresh keeps dropdown menu open
+    OLED says “Hello [username]!” when you log in to your user account
+
+Zumi.py (library ver. 1.3)
+    Added into camera library: record mode, save_photo fixed, vflip and hflip instead of cv2 flip every image capture
+    IR class now has simple ir functions
+    All Korean code has been added to our util library
+    Added to screen library brightness, on, off methods
+    Fixed move_inches function
+    added to pid_reset reset gyro time past
+    Added OLED screen scroll
+    Added to vision.py find_face(), find_smile() , convert_to_gray(), convert_to_hsv()
+
+----------
+
 v1.74
 front end
     Fix URL to connect to Korean dashboard so that it can access Jupyter folder
