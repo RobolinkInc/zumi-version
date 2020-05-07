@@ -1,4 +1,13 @@
-v1.8 (Tue Apr 21)
+v1.81 (Thu Apr 30)
+Front end
+    Fixed URL to connect to Korean dashboard with access to correct Jupyter folder
+    BUGFIX: checking jupyter server issue
+    BUGFIX: updater issues for dashboard only and dashboard + content
+
+
+----------
+
+v1.80 (Tue Apr 21)
 Front end
     Front-end refactoring
     BUG: Change tab name from "Blockly: Demo Code" to "Blockly for Zumi"
