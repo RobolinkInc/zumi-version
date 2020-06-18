@@ -1,3 +1,69 @@
+v2.00 (Mon Jun 18)
+Front-end
+    Less intrusive WiFi login UX with modal windows instead
+    WiFi login able to get on hidden networks networks (WPA, WEP, WPA2)
+    Settings menu version information is simplified
+
+Back-end
+    Add instructions to static failsafe page
+    Back-end adjusted to handle new WiFi connection process
+    OLED says "Hello, Alex!" instead of "Hello Alex!"
+    Refactor of back-end code to clear out unused code
+
+---
+
+v1.90 (Mon May 18)
+Front end
+    Launched our first wizard experience: Learning Gestures
+    BUGFIX: Blockly doesn't run when connecting to dashboard thru-WiFi
+    Improved approach to explanation overlay to a file-based state
+    Enabled touch events for Drive Mode so you can use the arrows on a touchscreen
+    Enabled touch events for Code Mode projects so you can tap on a touchscreen
+    Fixing the zoom level and alignment on various pages for touch screens
+    Login screen text input shouldn't be italic after you click into it
+    Turn on eyes automatically when entering Drive Mode
+
+Back end
+    Improvements internet checker to improve WiFi stability
+    Hidden networks back-end set up
+    "I can update!" with notification sound on the OLED when update triggers
+
+Zumi 1.4 
+    Added more comment and reformatted code to PEP standard
+
+Zumi.py
+    zumi.board_firmware_version variable that keeps track of the board firmware version. Necessary for protection on some methods that don’t work on older board firmware versions.
+    Added protection to all methods in which I2C messages would be detected by Zumi Arduino firmware board on 1.0.
+    Added line_follow_step() 
+    zumi.line_follow_step()
+    Added an easier to use method
+    zumi.gyro_calibrate()
+         
+Screen.py
+    Changed the image object to initiate in order to be able to draw on top of shared image object.
+    screen.draw_rect()
+    screen.draw_line()
+    screen.draw_polygon()
+    screen.draw_ellipse()
+    screen.draw_circle()
+    screen.draw_arc()
+    screen.draw_chord()
+    screen.draw_triangle()
+    screen.clear_drawing()
+
+Vision.py
+    #changed find_face and find_smile to return a list and none instead of -1,-1,-1,-1 and a tuple.
+    data = vision.find_face(gray)
+	Changed all the color_object to return list instead of tuples.
+    find_green_object()
+    find_red_object()
+    find_blue_object()
+    find_yellow_object()
+    find_orange_object()
+    find_purple_object()
+
+----------
+
 v1.82 (Wed May 6)
 Front end
     BUGFIX: Camera stream was using incorrect URL
