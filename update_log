@@ -1,3 +1,98 @@
+2.21 (Mon Nov 2)
+Front end
+    BUG: Socket disconnection occurs when user logs in b/c there's a base content → user content folder copy
+    BUG: When user reboots in the same tab, content seems to be missing still
+    BUG: If getting stuck on "Trying to connect..." and user refreshes, the WiFi icon doesn't seem to be in right state. Need to clear out session storage.
+    BUG: Added a 100 sec timeout to "Trying to connect..." state to refresh the page if it just doesn't go anywhere.
+
+Back end
+    BUG: Calibration stuck issue
+
+----
+
+v2.20 (Thu Oct 8)
+Front end
+    Fixed UI issues and made Color Training wizard with saving public-facing
+    BUGFIX: Socket disconnections when opening camera streaming
+    BUGFIX: If missing "Zumi_Content_ko" at ~/Dashboard, content shows up as English
+    View log, and Copy log into clipboard
+    BUGFIX: Camera turns off when user navigates Back on a page where there's a camera stream
+    BUGFIX: Overlay shouldn't happen if we see the content loading error modal window
+    BUGFIX: Camera turns off when you leave a tab where the camera is running
+    BUGFIX: When you go into Drive Mode and the camera is on for some reason, the dashboard shows the "XX" eyes
+    BUGFIX: "I can update" false positive trigger on OLED. Close window will put eyes back.
+    "My Folder" takes you to the user level directory rather than "Lesson" directory
+    BUGFIX: Lessons sometimes missing after update and having edited content, need to reboot to fix. Solving root problem.
+    BUGFIX: Grey area behind modal window should close "content loading error" modal window
+    Drive Mode mobile layout
+
+Back end
+    BUGFIX: Missing Zumi_Content_en/ko directory causes critical problem w/ lessons
+    Messaging change "Updating content [loading bar]" --> "Getting latest lessons [loading bar]"
+    Removed the message after "I'm updated!" where it says "Zumi updated to v2.2" when it actually means "2.02" to avoid confusion
+    Removed "Updated to v1.71!" message for after the content updates. Changed to "Got the latest lessons!" on the OLED.
+    BUGFIX: Missing README.md causes critical problem problem w/ lessons
+    BUGFIX: Content updater failure error handling (inherited from formerly 2.14)
+    Do some math stabilization for battery value sent to front end
+
+Zumi Libary 1.5
+    Move_inches method fixed
+    Drive commands can be stopped with jupyter stop button. forward, reverse turn etc.
+    Doc strings in all zumi.py methods will be updated and corrected
+    Doctest will be implemented on 10 commonly used methods.
+    Added keyboard interrupt message to replace confusing error message inisde of forward, reverse, turn_left,turn_right, turn, etc.
+    Added extra parameter to zumi.line_follower()
+    Added zumi.motor_speeds which is set every-time motors are used. This will allow for a future program to prevent Zumi motors from changing dramatically. Also helpful for users to determine what the current motor speeds are set to.
+    zumi.parallel_park( speed=15, step=1, delay=0.01,angle = 55) now has angle parameter to tweak the angle it tries to move in.
+    zumi.line_follower( time_out, speed=10, left_thresh=100, right_thresh=100,diff_threshold=100) now has an extra parameter for users to tweak.
+
+
+---
+
+v2.14
+Back-end
+    BUGFIX: "Couldn't update, please try again," then gets stuck on content update bar
+
+---
+
+v2.10 (Wed Jul 22)
+Front-end
+    Regression + Color Training wizard launched 
+    Updates to UI for AP drop situation
+    Implemented PiCam streaming component
+    Error handling: "Lesson not found: I had some issues retrieving the lessons. I might need to reboot. [Reboot]"
+    Message while updating: "Please wait while I update... After updating is complete, you can [you can go back to the dashboard]"
+    Special characters in project names/usernames (_, -)
+    BUGFIX: wrong password, clear out navbar
+
+Back-end
+    IMPROVEMENT: Clearer update failure message "Couldn't update, please try again" for 10 seconds with notification sound effect
+    Starting Flask as a service
+    Log for errors when troubleshooting (journalctl)
+    "Help me get online" on OLED when WiFi modal is opened
+    Error handling on OLED for broken WiFi module
+
+Zumi Library 1.41 
+    Create an easier to use method instead of zumi.get_all_ir_data()  maybe zumi.update_ir() method.
+    Create screen.print() which will allow users to add text to the draw objects in order to add on top
+        Selectable location coordinate
+        Selectable size
+        Selectable font
+        Selectable infill black or white
+    Create live graphing methods for screen. screen.graph(x,y)
+	Takes 2 parameters the current x value and the current y value
+    All Zumi screen shape methods can have inverted color such as black or white, with the fill_in=True parameter
+        val = vision.detect_movement(im1,im2) which detects movement has been added
+        vision.find_stop_sign(gray) stop sign detector added
+
+---
+
+v2.01 (Thu Jun 23)
+Back-end
+         Power management off by default
+
+---
+
 v2.00 (Mon Jun 18)
 Front-end
     Less intrusive WiFi login UX with modal windows instead
