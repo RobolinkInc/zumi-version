@@ -1,3 +1,17 @@
+2.31 (Thu Dec 31)
+Front end
+    Added a "Disconnect from WiFi" button to network hover menu
+    IMPROVEMENT: Making UX smoother when missing content during language changes
+    Drive Mode has a few new "just for fun" features
+    Clear up dashboard shutdown behavior, so it doesn't confuse user. Conflicting overlay message and shutdown message
+    Calibration button in Drive Mode
+    
+Back end
+    "I'm updated! [happy eyes]" is center on OLED
+    IMPROVEMENT: Need a notification sound after an update finishes and after "Dashboard restarting..."
+    
+----
+
 2.21 (Mon Nov 2)
 Front end
     BUG: Socket disconnection occurs when user logs in b/c there's a base content → user content folder copy
