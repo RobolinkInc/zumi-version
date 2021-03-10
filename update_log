@@ -1,3 +1,23 @@
+v2.40 (Wed Mar 10)
+Front end
+    Buttons have hover & mouse-down UI behavior
+    IMPROVEMENT: X close buttons all consistent
+    IMPROVEMENT: Center-align modal windows
+
+Back end
+    Major code refactoring for improved stability
+    BUG: Socket disconnection during the last network process gets stuck on the loading screen when going to "zumidashboard.ai" for the first time where last network no longer available
+    BUG: "Trying to connect..." hangs forever if a socket disconnection happens
+
+Zumi Library 1.54
+    Fix get_qr_center() so it returns center, not top left
+    Adding drawing PNGs in Screen
+    Gyro assist line following function added
+    Parameter for "preboot check" skipping, speed up "blockly" potentially
+    Added new images for Screen
+    
+----
+
 2.31 (Thu Dec 31)
 Front end
     Added a "Disconnect from WiFi" button to network hover menu
