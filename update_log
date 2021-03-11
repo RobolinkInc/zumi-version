@@ -1,3 +1,12 @@
+v2.41 (Thu Mar 11)
+Front end
+    Fixed a Jupyter 404 error
+    KNN model dot issue where it only draws one dot
+    Korean modal window font size was too big, shrank down
+    Fixed issue where it would show the disconnection overlay while updating Korean content
+
+----
+
 v2.40 (Wed Mar 10)
 Front end
     Buttons have hover & mouse-down UI behavior
