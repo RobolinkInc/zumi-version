@@ -1,3 +1,27 @@
+v2.45 (Fri May 7)
+Zumi Library 1.60
+    Hotfix on bug: fixing play_note() error in lesson about audio, which is also related to personality.happy() issue
+    Added new python Blockly functions in order to make it easier for Blockly to parse information
+    Added find_stop_sign_blockly()
+    Added find_face_blockly()
+    Added get_QR_message_blockly()
+    Added show_image_blockly()
+
+----
+
+v2.44 (Mon Mar 29)
+Front end
+    Hotfix on bug: Language issue where switching to another language, sometimes dashboard & content still appear in first language
+
+----
+
+v2.43 (Mon Mar 29)
+Front end
+    Hotfix on bug: Regression inline button & circular list buttons aren't behaving as expected
+    Hotfix on bug: Updating from 2.31 → 2.42 while in Korean. Settings modal says still in Korean, but content showing up in English.
+
+----
+
 v2.41 (Thu Mar 11)
 Front end
     Fixed a Jupyter 404 error
