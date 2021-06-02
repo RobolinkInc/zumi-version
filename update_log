@@ -1,3 +1,17 @@
+v2.50 (Tue Jun 1)
+Front end
+    Blockly has AI, sensor, camera, and senior drive blocks
+    Added a "Download project" menu item in hamburger menu dropdown
+    BUGFIX: Sometimes the dashboard hangs on the loading screen spinner still when going to zumidashboard.ai
+Back end
+    Adding a pyxterm.js server so we can do live-print
+    BUGFIX: Connecting to a new WiFi when old WiFi is no longer available seems to fail on first attempt
+Zumi Library 1.61
+    Added several competition-focused functions for funnel alignment, Blockly overloaded function adaptations, and competition-focused improvements to existing functions
+
+
+----
+
 v2.45 (Fri May 7)
 Zumi Library 1.60
     Hotfix on bug: fixing play_note() error in lesson about audio, which is also related to personality.happy() issue
