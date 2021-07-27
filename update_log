@@ -1,3 +1,37 @@
+v2.52 (Tue Jul 27)
+Front end
+    Drive Mode improvements to layout to fix responsiveness layout issues
+    Instructions for troubleshooting camera detachment issues in Drive Mode
+    Restarting button animation and messaging improvements
+    BUGFIX: Blockly run button not disabled between tabs durng runs
+    Added additional blocks to Blockly
+    Gesture activity having issues on iPads
+    Code Mode layout improvements to fix responsiveness layout issues
+
+—-
+
+v2.51 (Wed Jun 30)
+Front end
+    Remove "Happy" animation from Drive Mode
+    2021 "Cruise to the Park" competition-specific lessons section on "Learn" page
+    "I'm calibrating, please don't move me..." modal window
+    Change wizard buttons to say "Start" instead of "Play"
+    Modal window showing features of the latest update
+    Added the Restart option back to the Shutdown menu
+    BUGFIX: Not online wifi icon displaying incorrectly
+    BUGFIX: Small CSS issues on iPad
+    Release notes only show up after updating
+    Change "+Add Blockly Project" and "+Add Jupyter" button color to match project icons
+    Added "My Folder" to the Code Mode page
+    Blockly: Changed the text input to the number block
+    Blockly: Fix the line following gyro block
+    Blockly: Added drive_over_markers block
+
+Back end
+    Remove Enterprise networks from the list for now until Zumi can support it
+
+----
+
 v2.50 (Tue Jun 1)
 Front end
     Blockly has AI, sensor, camera, and senior drive blocks
@@ -8,7 +42,6 @@ Back end
     BUGFIX: Connecting to a new WiFi when old WiFi is no longer available seems to fail on first attempt
 Zumi Library 1.61
     Added several competition-focused functions for funnel alignment, Blockly overloaded function adaptations, and competition-focused improvements to existing functions
-
 
 ----
 
