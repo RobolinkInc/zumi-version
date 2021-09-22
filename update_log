@@ -1,3 +1,11 @@
+v2.60 (Tue Sep 21)
+Front end
+    Updated Blockly to run on the latest version
+    Missing content error handling improved
+    Messaging for WiFi being optional made clearer in modal window
+
+—-
+
 v2.52 (Tue Jul 27)
 Front end
     Drive Mode improvements to layout to fix responsiveness layout issues
