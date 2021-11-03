@@ -1,3 +1,13 @@
+v2.61 (Wed Nov 3)
+    BUG: Image drawer thumbnails not appearing quickly enough
+    BUG: Speed prediction permission issue
+    BUG: Blockly IR thresholds adjustments
+    BUG: Move inches command for speed calibration
+    BUG: Loading issue for XML files
+    Open an uploaded XML file
+
+—-
+
 v2.60 (Tue Sep 21)
 Front end
     Updated Blockly to run on the latest version
