@@ -1,3 +1,11 @@
+v2.92 (Thu Aug 8)
+    Korean Blockly translations
+    Minor content changes and bugfixes
+    Removed "Master tab" in Blockly
+    Removed Python beta lessons
+
+—-
+
 v2.80 (Tue May 10)
     Added ability to connect to hidden network
     Remove modal window on bootup
